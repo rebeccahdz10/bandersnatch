@@ -1,3 +1,13 @@
-.this {
-    color: gold
+/* === LOGIN PAGE === */
+.loginLogo{
+    text-align: center;
+    font-family: cursive;
+    font-size: 24px;
+}
+.loginBox {
+    border: outset gray 2px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 5px;
 }
