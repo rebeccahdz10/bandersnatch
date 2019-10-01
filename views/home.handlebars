@@ -1,5 +1,47 @@
-<div class="homeContainer">
-    <img src="https://i.imgur.com/UAb5Tk4.jpg" alt="">
-    <h1 class="hi">Got ya</h1>
-    <h2 class="hi">Home page will be done before class</h2>
+<header>
+    <!--Navbar-->
+    <nav class="nav-wrapper transparent" id="mainNavbar">
+        <div class="container">
+            <a href="#" class="brand-logo">Super tight logo</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="navbar-links" class="right hide-on-med-and-down">
+                <li><a href="./profile" class="profileLink lnk">My Profile</a></li>
+                <li><a href="./contact" class="contactLink lnk">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Navbar Phone Menu-->
+    <div>
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="./profile" class="profileLink">My Profile</a></li>
+            <li><a href="./contact" class="contactLink">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+<!--Welcome & start box -->
+<div class="container" id="homeBox">
+    <h2 id="welcome">Welcome</h2>
+    <br>
+    <hr width="75%">
+    <br>
+    <a href="#adventure" class="btn waves-effect waves-light modal-trigger">Start new adventure</a>
+</div>
+
+<!--Modal for questions-->
+<div class="modal" id="adventure">
+    <div id="questionBox">
+        <img src="https://i.imgur.com/UAb5Tk4.jpg" alt="" id="errImg">
+    </div>
+    <hr width="50%">
+    <div id="answerBox">
+        <h3>If you're seeing this, there has been an error. Please check your internet connection and
+            retry.</h3>
+    </div>
+    <div>
+        <button class="btn waves-effect waves-light modal-close" id="modalOkBtn">Ok</button>
+    </div>
 </div>

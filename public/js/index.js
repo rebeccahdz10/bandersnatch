@@ -1,3 +1,8 @@
+// === PHONE MENU FUNCTION === //
+$(".sidenav").sidenav()
+$(".modal").modal()
+
+// === AUTHENTICATION === //
 var loginPeeps = [
     {
         username: `marissa`,

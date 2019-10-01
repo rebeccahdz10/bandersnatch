@@ -26,20 +26,70 @@ body{
 }
 .inputLines{
     text-align: center;
-    color: white
+    color: white;
+    width: 80% !important
 }
 #loginInput {
     font-family: 'Kaushan Script', cursive;
     font-size: 30px;
     color: #ece8e3;
 }
-
+h2{
+    margin: auto
+}
+/* === NAVBAR === */
+.brand-logo{
+    font-family: 'Marck Script', cursive;
+}
+.lnk{
+    font-family: 'Rancho', cursive;
+    letter-spacing: 1px;
+    text-decoration: underline gray;
+    font-size: 25px
+}
+.lnk:hover{
+    color: #47a69a
+}
 
 /* === HOME PAGE === */
-.hi{
-    color: white
+#homeBox{
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 150px auto;
+    padding: 50px;
+    border: outset 2px #807e7f;
 }
-.homeContainer{
-    margin: 40px auto;
+#welcome {
+    margin: auto !important;
+    font-family: 'Kaushan Script', cursive;
+    color: #ece8e3;
+}
+#adventure {
+    background: gray;
+    border: outset darkgray 2px;
+    padding: 10px;
+    margin: auto;
     text-align: center
+}
+
+/* === MEDIA QUERIES === */
+@media only screen and (min-width: 700px) {
+    #mainNavbar {
+        width: 75%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .brand-logo{
+        font-size: 24px !important;
+    }
+    #homeBox {
+        padding: 25px
+    }
+    #errImg{
+        width: 200px;
+        height: 200px
+    }
 }
