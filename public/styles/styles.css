@@ -1,13 +1,45 @@
 /* === LOGIN PAGE === */
+body{
+    background: url("https://wallpaperaccess.com/full/231696.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .loginLogo{
     text-align: center;
     font-family: cursive;
-    font-size: 24px;
+    font-family: 'Marck Script', cursive;
+    color: #47a69a;
+    font-size: 100px;
+    margin: 40px auto 30px auto;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 .loginBox {
-    border: outset gray 2px;
+    border: outset #e6c8ba 2px;
     text-align: center;
     width: 70%;
     margin: auto;
     padding: 5px;
+    background: rgba(90, 90, 90, .75)
+}
+.inputLines{
+    text-align: center;
+    color: white
+}
+#loginInput {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    color: #ece8e3;
+}
+
+
+/* === HOME PAGE === */
+.hi{
+    color: white
+}
+.homeContainer{
+    margin: 40px auto;
+    text-align: center
 }
