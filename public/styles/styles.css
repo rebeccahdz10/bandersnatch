@@ -1,0 +1,186 @@
+/* === LOGIN PAGE === */
+body{
+    background: url("https://wallpaperaccess.com/full/231696.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.loginLogo{
+    text-align: center;
+    font-family: cursive;
+    font-family: 'Marck Script', cursive;
+    color: #47a69a;
+    font-size: 100px;
+    margin: 40px auto 30px auto;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.loginBox {
+    border: outset #e6c8ba 2px;
+    text-align: center;
+    width: 70%;
+    margin: auto auto 50px auto;
+    padding: 5px;
+    background: rgba(90, 90, 90, .75);
+}
+#loginInput {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    color: #ece8e3;
+}
+.inputLines{
+    text-align: center;
+    color: white;
+    width: 80% !important
+}
+
+
+
+
+
+/* === NAVBAR === */
+#mainNavbar{
+    background: rgba(90, 90, 90, .4);
+}
+.brand-logo{
+    font-family: 'Marck Script', cursive;
+    font-size: 24px !important
+}
+.lnk{
+    font-family: 'Rancho', cursive;
+    letter-spacing: 1px;
+    text-decoration: underline gray;
+    font-size: 25px
+}
+.lnk:hover{
+    color: #47a69a
+}
+
+
+
+
+
+/* === FOOTER === */
+#copyright{
+    background: rgba(90, 90, 90, .4);
+    font-family: 'Rancho', cursive;
+}
+
+
+
+
+
+/* === HOME PAGE === */
+#homeBox{
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 150px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+#welcome {
+    margin: auto !important;
+    font-family: 'Kaushan Script', cursive;
+    color: #ece8e3;
+}
+#adventure {
+    background: gray;
+    border: outset darkgray 2px;
+    padding: 10px;
+    margin: auto;
+    text-align: center
+}
+
+
+
+
+/* === CONTACT PAGE === */
+#contactBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+.contactHead {
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-decoration: underline #131b2d
+}
+
+
+
+
+
+/* === PROFILE PAGE === */
+#profileBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+.profileHead{
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-decoration: underline #131b2d
+}
+.profileInfoText {
+    font-family: 'Rancho', cursive;
+    color: white
+}
+#pastAdventuresHead {
+    color: white
+}
+
+
+
+
+/* === 404 PAGE === */
+#errorBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+
+
+
+
+/* === MEDIA QUERIES === */
+@media only screen and (min-width: 700px) {
+    #mainNavbar {
+        width: 75%;
+        margin: auto;
+    }
+    #footer {
+        width: 75%;
+        margin: auto
+    }
+    #homeBox {
+        padding: 40px;
+    }
+    #profileBox{
+        width: 60%
+    }
+    #contactBox{
+        width: 60%
+    }
+    #errorBox{
+        width: 60%
+    }
+}
