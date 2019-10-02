@@ -140,7 +140,9 @@ body{
     color: white
 }
 #pastAdventuresHead {
-    color: white
+    color: white;
+    font-family: 'Marck Script', cursive;
+    text-decoration: underline #131b2d
 }
 
 
