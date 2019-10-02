@@ -20,26 +20,32 @@ body{
     border: outset #e6c8ba 2px;
     text-align: center;
     width: 70%;
-    margin: auto;
+    margin: auto auto 50px auto;
     padding: 5px;
-    background: rgba(90, 90, 90, .75)
-}
-.inputLines{
-    text-align: center;
-    color: white;
-    width: 80% !important
+    background: rgba(90, 90, 90, .75);
 }
 #loginInput {
     font-family: 'Kaushan Script', cursive;
     font-size: 30px;
     color: #ece8e3;
 }
-h2{
-    margin: auto
+.inputLines{
+    text-align: center;
+    color: white;
+    width: 80% !important
 }
+
+
+
+
+
 /* === NAVBAR === */
+#mainNavbar{
+    background: rgba(90, 90, 90, .4);
+}
 .brand-logo{
     font-family: 'Marck Script', cursive;
+    font-size: 24px !important
 }
 .lnk{
     font-family: 'Rancho', cursive;
@@ -51,15 +57,30 @@ h2{
     color: #47a69a
 }
 
+
+
+
+
+/* === FOOTER === */
+#copyright{
+    background: rgba(90, 90, 90, .4);
+    font-family: 'Rancho', cursive;
+}
+
+
+
+
+
 /* === HOME PAGE === */
 #homeBox{
     background: rgba(59, 63, 80,0.90);
     text-align: center;
+    margin: 150px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 25px;
     width: fit-content;
     height: fit-content;
-    margin: 150px auto;
-    padding: 50px;
-    border: outset 2px #807e7f;
 }
 #welcome {
     margin: auto !important;
@@ -74,22 +95,92 @@ h2{
     text-align: center
 }
 
+
+
+
+/* === CONTACT PAGE === */
+#contactBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+.contactHead {
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-decoration: underline #131b2d
+}
+
+
+
+
+
+/* === PROFILE PAGE === */
+#profileBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+.profileHead{
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-decoration: underline #131b2d
+}
+.profileInfoText {
+    font-family: 'Rancho', cursive;
+    color: white
+}
+#pastAdventuresHead {
+    color: white
+}
+
+
+
+
+/* === 404 PAGE === */
+#errorBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+
+
+
+
 /* === MEDIA QUERIES === */
 @media only screen and (min-width: 700px) {
     #mainNavbar {
         width: 75%;
         margin: auto;
     }
-}
-@media only screen and (max-width: 400px) {
-    .brand-logo{
-        font-size: 24px !important;
+    #footer {
+        width: 75%;
+        margin: auto
     }
     #homeBox {
-        padding: 25px
+        padding: 40px;
     }
-    #errImg{
-        width: 200px;
-        height: 200px
+    #profileBox{
+        width: 60%
+    }
+    #contactBox{
+        width: 60%
+    }
+    #errorBox{
+        width: 60%
     }
 }

@@ -1,14 +1,14 @@
 <header>
     <!--Navbar-->
-    <nav class="nav-wrapper transparent" id="mainNavbar">
+    <nav class="nav-wrapper" id="mainNavbar">
         <div class="container">
-            <a href="#" class="brand-logo">Super tight logo</a>
+            <a href="#" class="brand-logo">Snatch off</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-links">
                 <i class="material-icons">menu</i>
             </a>
             <ul id="navbar-links" class="right hide-on-med-and-down">
-                <li><a href="./profile" class="profileLink lnk">My Profile</a></li>
-                <li><a href="./contact" class="contactLink lnk">Contact Us</a></li>
+                <li><a href="/profile" class="profileLink lnk">My Profile</a></li>
+                <li><a href="/contact" class="contactLink lnk">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -16,8 +16,8 @@
     <!--Navbar Phone Menu-->
     <div>
         <ul class="sidenav" id="mobile-links">
-            <li><a href="./profile" class="profileLink">My Profile</a></li>
-            <li><a href="./contact" class="contactLink">Contact Us</a></li>
+            <li><a href="/profile" class="profileLink">My Profile</a></li>
+            <li><a href="/contact" class="contactLink">Contact Us</a></li>
         </ul>
     </div>
 </header>
@@ -34,14 +34,24 @@
 <!--Modal for questions-->
 <div class="modal" id="adventure">
     <div id="questionBox">
-        <img src="https://i.imgur.com/UAb5Tk4.jpg" alt="" id="errImg">
+        <img src="https://i.imgur.com/UAb5Tk4.jpg" alt="" id="errImg" width="200" height="200">
     </div>
     <hr width="50%">
     <div id="answerBox">
-        <h3>If you're seeing this, there has been an error. Please check your internet connection and
+        <h3>If you're seeing this, there has been an error loading your adventure. Please check your internet connection
+            and
             retry.</h3>
     </div>
     <div>
         <button class="btn waves-effect waves-light modal-close" id="modalOkBtn">Ok</button>
     </div>
 </div>
+
+<!--Footer-->
+<footer id="footer" class="page-footer transparent" style="position:fixed;bottom:0;left:0;width:100%;">
+    <div class="footer">
+        <div class="container center" id="copyright">
+            © 2019 Copyright
+        </div>
+    </div>
+</footer>
