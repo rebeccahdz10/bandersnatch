@@ -6,10 +6,10 @@ CREATE TABLE mainDialogue
    id INT NOT NULL
    AUTO_INCREMENT,
    question VARCHAR
-   (500) NOT NULL,
-   option1 VARCHAR (500) NOT NULL,
-   option2 VARCHAR (500) NOT NULL,
-   PRIMARY KEYs
+   (100) NOT NULL,
+   option1 VARCHAR (100) NOT NULL,
+   option2 VARCHAR (100) NOT NULL,
+   PRIMARY KEY
    (id)
 );
 
@@ -17,10 +17,12 @@ CREATE TABLE adventureOne
 (
    id INT NOT NULL
    AUTO_INCREMENT,
+   story VARCHAR
+   (1000) NOT NULL,
    question VARCHAR
-   (500) NOT NULL,
-   option1 VARCHAR (500) NOT NULL,
-   option2 VARCHAR (500) NOT NULL,
+   (100) NOT NULL,
+   option1 VARCHAR (100) NOT NULL,
+   option2 VARCHAR (100) NOT NULL,
    PRIMARY KEY
    (id)
 );
@@ -29,10 +31,12 @@ CREATE TABLE adventureTwo
 (
    id INT NOT NULL
    AUTO_INCREMENT,
+   story VARCHAR
+   (1000) NOT NULL,
    question VARCHAR
-   (500) NOT NULL,
-   option1 VARCHAR (500) NOT NULL,
-   option2 VARCHAR (500) NOT NULL,
+   (100) NOT NULL,
+   option1 VARCHAR (100) NOT NULL,
+   option2 VARCHAR (100) NOT NULL,
    PRIMARY KEY
    (id)
 );
@@ -40,6 +44,8 @@ CREATE TABLE adventureTwo
 CREATE TABLE endings (
    id INT NOT NULL
    AUTO_INCREMENT,
+   adventure VARCHAR
+   (50) NOT NULL,
    story VARCHAR
    (5000) NOT NULL,
    PRIMARY KEY
