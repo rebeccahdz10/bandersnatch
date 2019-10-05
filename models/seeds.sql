@@ -1,3 +1,11 @@
+INSERT INTO recentEnding
+    (ending, name)
+VALUES
+    ("Death", "Connor");
+INSERT INTO recentEnding
+    (ending, name)
+VALUES
+    ("Prison", "Marissa");
 INSERT INTO mainDialogue
     (question, option1, option2)
 VALUES
@@ -16,34 +24,34 @@ VALUES
     ("You call your friend to see if they want to hang out. They ask you ", "how you living?", "Boolin", "Lost in the sauce");
 
 INSERT INTO adventureOne
-    (story)
+    (story, question, option1, option2)
 VALUES
-    ("What's new?");
-
-INSERT INTO adventureOne
-    (story)
-VALUES
-    ("What's wrong?");
+    ("What's new?", "x", "x", "x");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
 VALUES
-    ("Your friend says “Let’s drink”! So you head to the bar.", "What's your drink?", "Beer", "Shot");
+    ("What's wrong?", "x", "x", "x");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
 VALUES
-    ("What type of beer?", "PBR", "IPA");
+    ("Your friend says “Let’s drink about it”! You arrive at the bar and greet them.", "What would you like to drink?", "Beer", "Shot");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
 VALUES
-    ("You immediately need to pee and you head to the bathroom where you meet a bathroom wizard. He offers you some magic beans. ", "Do you take them?", "Yes", "No");
+    ("x", "What type of beer?", "PBR", "IPA");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
 VALUES
-    ("You hand the hobo a fist full of cash. ", "Do you eat them right away?", "Yes", "No");
+    ("You immediately need to pee and you head to the bathroom where you meet a man proclaiming himself to be a bathroom wizard. He offers you some magic beans. ", "Do you take them?", "Yes", "No");
+
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You hand the wizard a fist full of cash. ", "Do you eat them right away?", "Yes", "No");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
@@ -58,12 +66,12 @@ VALUES
 INSERT INTO adventureOne
     (story, question, option1, option2)
 VALUES
-    ("Before you can take your shot someone bumps into you, spilling your shot on your shirt. The guy doesn’t apologize and moves on. ", "Do you punch him?", "Yes", "No");
+    ("Before you can take your shot someone bumps into you, spilling your shot on your shirt. He stops and gives you a dirty look before walking away. ", "Do you punch him?", "Yes", "No");
 
 INSERT INTO adventureOne
-    (story)
+    (story, question, option1, option2)
 VALUES
-    ("Click the button below as many times as you can to defeat him!");
+    ("Click the button below as many times as you can to defeat him!", "x", "x", "x");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
@@ -76,9 +84,9 @@ VALUES
     ("You take your shot and you get pulled towards the dance floor. ", "Do you want to dance?", "Yes", "No");
 
 INSERT INTO adventureOne
-    (question, option1, option2)
+    (story, question, option1, option2)
 VALUES
-    ("Do you want to head home?", "Yes", "No");
+    ("x", "Do you want to head home?", "Yes", "No");
 
 INSERT INTO adventureOne
     (story, question, option1, option2)
@@ -95,12 +103,60 @@ INSERT INTO adventureOne
 VALUES
     ("You down it and get offered ANOTHER! ", "Take it?", "Yes", "No");
 
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("A bearded man in a flannel shirt approaches you to compliment your sick hop choice.  The two of you start an indie band and move to Portland.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You try to politely decline the strange mans beans, yet this only enrages him.  The wizard grabs you by the wrist and unleashes a mighty roar.  In only an instant, you are transported into a jail cell.  You try to explain your situation to the guards, who then place you on heavy medication.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You scarf down those bathroom beans. You mozy back to the bar and tell your friend about your wizard fiasco, who ensures you the you are an idiot.  The beans did nothing but leave a bad taste in your mouth.", "Buy another round?", "Yeah", "Fuck yeah");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You buy another round.", "Slam it?", "Okay", "Nah");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You pocket those bathroom beans and head back to your friend.  You explain what happened and attempt to show them the beans, but cannot seem to find them.....", "Buy another round?", "Yeah", "Fuck yeah");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You stay at the bar until it closes.", "Uber or drive?", "Uber", "Drive");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You call an uber and get home safely.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You manage to drive home safely.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You call an ambulance and wait for the police to arrive.  The other driver dies and you are taken into custody for DUI and manslaughter.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You make a break for the hills. Just as you begin to feel free of the situation, a tremendous roar shakes the ground behind you.  You turn around to see a massive bear paw barreling towards your face.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("The man turns around and yells at you for bumping him.  Before you realize what he was saying, he punches your face out of the back of your skull.  You died instantly the next day.", "x", "x", "x");
+INSERT INTO adventureOne
+    (story, question, option1, option2)
+VALUES
+    ("You lose!  He catches you offguard with an uppercut, then punches your face out of the back of your skull.  You died instantly the next day.", "x", "x", "x");
 
 
 INSERT INTO adventureTwo
-    (question)
+    (story, question, option1, option2)
 VALUES
-    ("What errand do you want to run?");
+    ("x", "What errand do you want to run?", "x", "x");
 
 INSERT INTO adventureTwo
     (story, question, option1, option2)
@@ -180,20 +236,20 @@ VALUES
     ("You arrive at your destination, but as you get out your Taxi/Uber you notice the tow truck driver’s truck.", "What do you do?", "Go take a look", "Disregard it");
 
 INSERT INTO adventureTwo
-    (story)
+    (story, question, option1, option2)
 VALUES
-    ("You just can’t help but think about it, so you turn around to look one more time. The driver is right behind you, covers your eyes and everything goes black. ")
+    ("You just can’t help but think about it, so you turn around to look one more time. The driver is right behind you, covers your eyes and everything goes black.", "x", "x", "x");
 
 INSERT INTO adventureTwo
-    (story)
+    (story, question, option1, option2)
 VALUES
-    ("you get closer and you notice it has the same dent in the bumper. Really weird, but you try to come up with a logical solution. So you turn back. 
-The driver is right behind you, covers your eyes and everything goes black. ")
+    ("You get closer and you notice it has the same dent in the bumper. Really weird, but you try to come up with a logical solution. So you turn back. 
+The driver is right behind you, covers your eyes and everything goes black.", "x", "x", "x");
 
 INSERT INTO adventureTwo
-    (story)
+    (story, question, option1, option2)
 VALUES
-    ("You get in his car which is dirty and smells like cigarettes. You go with him to drop off your car at the mechanic, and get going to drop you off you realize he takes the wrong way. Before you can question him he covers your mouth with something. You pass out. ")
+    ("You get in his car which is dirty and smells like cigarettes. You go with him to drop off your car at the mechanic, and get going to drop you off you realize he takes the wrong way. Before you can question him he covers your mouth with something. You pass out.", "x", "x", "x");
 
 INSERT INTO adventureTwo
     (story, question, option1, option2)
@@ -225,7 +281,7 @@ VALUES
 INSERT INTO endings
     (adventure, story)
 VALUES
-    ("One", "ou stay at the bar. You have way too many drinks, and you black out. You wake up in the middle of the street. You are missing your keys your phone and your wallet. You start to wonder if you should’ve just taken the magic beans. ");
+    ("One", "You stay at the bar. You have way too many drinks, and you black out. You wake up in the middle of the street. You are missing your keys your phone and your wallet. You start to wonder if you should’ve just taken the magic beans. ");
 
 INSERT INTO endings
     (adventure, story)
@@ -285,7 +341,7 @@ VALUES
 INSERT INTO endings
     (adventure, story)
 VALUES
-    ("One", "You order an Uber home and don’t black out. It’s been a great day.");
+    ("One", "You hang out with your friend for a while, then order an Uber home. It’s been a great day.");
 
 
 

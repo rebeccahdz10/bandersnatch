@@ -87,7 +87,26 @@ body{
     font-family: 'Kaushan Script', cursive;
     color: #ece8e3;
 }
-
+.recentEnding{
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+#recentGamesHead{
+    font-family: 'Kaushan Script', cursive;
+    color: #ece8e3;
+    font-size: 45px
+}
+.recentListItem{
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
 
 
 /* === MODAL === */
@@ -203,6 +222,9 @@ body{
     }
     #homeBox {
         padding: 40px;
+    }
+    .recentEnding{
+        width: 45%
     }
     #profileBox{
         width: 60%
