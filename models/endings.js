@@ -1,7 +1,7 @@
 module.exports = function (sequelize, DataTypes) {
-    var Question = sequelize.define("endings", {
+    var endings = sequelize.define("endings", {
         adventure: DataTypes.TEXT,
         story: DataTypes.TEXT
     });
-    return Question;
+    return endings;
 };
