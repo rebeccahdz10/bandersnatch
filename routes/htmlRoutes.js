@@ -3,21 +3,14 @@ var db = require("../models");
 module.exports = function (app) {
     // Load index page
     app.get("/", function (req, res) {
-        db.Example.findAll({}).then(function (dbExamples) {
-            res.render("index", {
-                msg: "Welcome!",
-                examples: dbExamples
-            });
+        res.render("index", {
+            msg: "Welcome!",
         });
     });
 
     // Load home page
     app.get("/home", function (req, res) {
-        db.Example.findAll({}).then(function (dbExamples) {
-            res.render("home", {
-                examples: dbExamples
-            });
-        });
+        res.render("home");
     });
 
 
@@ -27,19 +20,28 @@ module.exports = function (app) {
     });
     // Load home page
     app.get("/profile", function (req, res) {
-        db.Example.findAll({}).then(function (dbExamples) {
-            res.render("profile", {
-                examples: dbExamples
-            });
-        });
+        res.render("profile");
+    });
+    app.get("/death", function (req, res) {
+        res.render("death");
+    });
+    app.get("/prison", function (req, res) {
+        res.render("prison");
+    });
+    app.get("/goodDay", function (req, res) {
+        res.render("goodDay");
+    });
+    app.get("/blackout", function (req, res) {
+        res.render("blackout");
     });
 
     // Load example page and pass in an example by id
     app.get("/questions/:id", function (req, res) {
-        db.Example.findOne({ where: { id: req.params.id } }).then(function (dbExample) {
+        db.question.findOne({ where: { id: req.params.id } }).then(function (question_db) {
             res.render("question", {
-                example: dbExample
+                question: question_db
             });
+            console.log(res.body)
         });
     });
 
