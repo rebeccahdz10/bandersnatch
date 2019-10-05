@@ -3,21 +3,15 @@ var db = require("../models");
 module.exports = function (app) {
     // Load index page
     app.get("/", function (req, res) {
-        db.question.findAll({}).then(function (dbExamples) {
-            res.render("index", {
-                msg: "Welcome!",
-                examples: dbExamples
-            });
+        res.render("index", {
+            msg: "Welcome!",
+            examples: dbExamples
         });
     });
 
     // Load home page
     app.get("/home", function (req, res) {
-        db.question.findAll({}).then(function (dbExamples) {
-            res.render("home", {
-                examples: dbExamples
-            });
-        });
+        res.render("home");
     });
 
 
