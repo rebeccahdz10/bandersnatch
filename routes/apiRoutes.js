@@ -22,13 +22,18 @@ module.exports = function (app) {
             res.json(endings)
         });
     });
+    app.get("/api/recentEnding", function (req, res) {
+        db.recentEnding.findAll().then(function (recentEnding) {
+            res.json(recentEnding)
+        });
+    });
 
-    // Create a new example
-    // app.post("/api/questions", function (req, res) {
-    //     db.mainDialogue.create(req.body).then(function (dbExample) {
-    //         res.json(dbExample);
-    //     });
-    // });
+    // Create a new recent ending
+    app.post("/api/recentEnding", function (req, res) {
+        db.recentEnding.create(req.body).then(function (recentEnding) {
+            res.json(recentEnding);
+        });
+    });
 
     // Delete an example by id
     // app.delete("/api/questions/:id", function (req, res) {

@@ -1,7 +1,7 @@
 module.exports = function (sequelize, DataTypes) {
-    var endings = sequelize.define("endings", {
-        adventure: DataTypes.TEXT,
-        story: DataTypes.TEXT
+    var recentEnding = sequelize.define("recentEnding", {
+        ending: DataTypes.TEXT,
+        name: DataTypes.TEXT,
     }, {
             // don't add the timestamp attributes (updatedAt, createdAt)
             timestamps: false,
@@ -21,7 +21,7 @@ module.exports = function (sequelize, DataTypes) {
             freezeTableName: true,
 
             // define the table's name
-            tableName: 'endings'
+            tableName: 'recentEnding'
         });
-    return endings;
+    return recentEnding;
 };

@@ -87,12 +87,25 @@ body{
     font-family: 'Kaushan Script', cursive;
     color: #ece8e3;
 }
+
+
+
+/* === MODAL === */
 #adventure {
     background: gray;
     border: outset darkgray 2px;
-    padding: 10px;
+    padding: 15px;
     margin: auto;
     text-align: center
+}
+#storyBox{
+    font-family: 'Rancho', cursive;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+#questionBox{
+    font-size: 30px
 }
 
 
@@ -161,7 +174,22 @@ body{
 }
 
 
-
+/* === ENDING PAGES === */
+#endingBox {
+    background: rgba(59, 63, 80,0.90);
+    text-align: center;
+    margin: 100px auto;
+    border: solid 2px #807e7f;
+    border-radius: 25px;
+    padding: 40px;
+    width: 90%;
+    height: fit-content;
+}
+.endingHead {
+    font-family: 'Marck Script', cursive;
+    color: white;
+    text-decoration: underline #131b2d
+}
 
 /* === MEDIA QUERIES === */
 @media only screen and (min-width: 700px) {

@@ -22,6 +22,18 @@ module.exports = function (app) {
     app.get("/profile", function (req, res) {
         res.render("profile");
     });
+    app.get("/death", function (req, res) {
+        res.render("death");
+    });
+    app.get("/prison", function (req, res) {
+        res.render("prison");
+    });
+    app.get("/goodDay", function (req, res) {
+        res.render("goodDay");
+    });
+    app.get("/blackout", function (req, res) {
+        res.render("blackout");
+    });
 
     // Load example page and pass in an example by id
     app.get("/questions/:id", function (req, res) {
