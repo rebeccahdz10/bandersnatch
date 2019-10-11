@@ -34,3 +34,7 @@ function getInfo() {
     }
     console.log("sorry bro you not one of us!")
 }
+
+$(".doneBtn").on("click", function () {
+    var name = $(".leaderboardName").val()
+})
